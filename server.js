@@ -34,7 +34,7 @@ app.use("/api/v1/product", productRoutes);
 
 //rest api
 app.get("*", (req, res) => {
-  res.sendFile(expres.static(path.join(__dirname,'./client/build/index.html')));
+  res.sendFile(express.static(path.join(__dirname,'./client/build/index.html')));
 });
 
 //PORT
